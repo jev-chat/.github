@@ -131,4 +131,4 @@ Jev 把这一步交给一个专门做判断的模型。不管你是在手机上�
 
 <p align="center"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/wechat-mp.png" width="160" alt="公众号二维码" /></p>
 
-<p align="center"><sub>仅供个人学习与研究使用。请遵守各软件的许可协议与当地法律法规。代码以 <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/LICENSE">MIT</a> 协议开源。</sub></p>
+<p align="center"><sub>© 2026 Finderchangchang（柳伟杰）与 jev-chat 贡献者 · <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/LICENSE">MIT</a> 开源 · 可商用，须注明出处（见 <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/NOTICE">NOTICE</a>）。只处理你自己有权查看的聊天，请遵守各软件的许可协议与当地法律法规。</sub></p>
