@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/overlay.png" width="240" alt="Jev 悬浮窗：聊天上方的分析面板" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/settings.png" width="240" alt="设置页" />
-</p>
 
 <h1 align="center">Jev 聊天助手</h1>
 
@@ -51,6 +46,12 @@ Jev 把这一步交给一个专门做判断的模型。你在微信、QQ、X 里
 | X / Twitter 私信 12.25 | ✅ 真机全链路 | 解析 Compose 节点的 content-desc |
 | 飞书 / Lark | 🟡 部分 | 标题、气泡位置、输入框可读；正文是自绘控件，待截屏 + OCR |
 | 桌面端 / 网页 | ⏳ 规划 | 同一内核，换采集方式 |
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/overlay.png" width="240" alt="Jev 悬浮窗：聊天上方的分析面板" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/settings.png" width="240" alt="设置页" />
+</p><p align="center"><sub>左：悬浮窗——危险等级、对方真实意图、排好序的 3 条候选回复。右：设置页。</sub></p>
 
 ## 隐私与边界
 
