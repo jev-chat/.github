@@ -8,7 +8,7 @@
   <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jev-chat/jev-chat-jarvis" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/Android-v1.4-3DDC84?logo=android&logoColor=white" alt="Android v1.4" />
   <img src="https://img.shields.io/badge/Windows-v0.1.6-0078D6?logo=windows&logoColor=white" alt="Windows v0.1.6" />
-  <img src="https://img.shields.io/badge/macOS-v0.3.0-000000?logo=apple&logoColor=white" alt="macOS v0.3.0" />
+  <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis-mac?style=flat&amp;logo=apple&amp;logoColor=white&amp;label=macOS" alt="macOS 最新版" />
 </p>
 
 <p align="center">
@@ -57,13 +57,13 @@
       <td><b>最新版本</b></td>
       <td>v1.4（2026-09-23）</td>
       <td>v0.1.6（2026-09-22）</td>
-      <td>v0.3.0</td>
+      <td>v0.5.0</td>
     </tr>
     <tr>
       <td><b>下载</b></td>
       <td><a href="https://github.com/jev-chat/jev-chat-jarvis/raw/main/apk/jev-assistant-v1.4-release.apk">jev-assistant-v1.4-release.apk</a>（约 25 MB）</td>
       <td><a href="https://github.com/jev-chat/jev-chat-windows/releases">jev-chat-windows-v0.1.6.zip</a>（约 146 MB，解压双击 exe，未签名需选「仍要运行」）</td>
-      <td><a href="https://github.com/jev-chat/jev-chat-jarvis-mac/releases">jev-jarvis-0.3.0-macos.zip</a>（未公证，首次需右键打开）</td>
+      <td><a href="https://github.com/jev-chat/jev-chat-jarvis-mac/releases/latest/download/jev-jarvis-macos-latest.zip">jev-jarvis-macos-v0.5.0.zip</a>（未公证，首次需右键打开）</td>
     </tr>
     <tr>
       <td><b>仓库</b></td>
@@ -94,7 +94,7 @@ Jev 把这一步交给一个专门做判断的模型。不管你是在手机上�
 | 环节 | 说明 | Android | Windows | macOS |
 |---|---|---|---|---|
 | **采集** | 拿到当前对话内容 | 无障碍服务读节点；读不到正文时截屏 + ML Kit 中文离线 OCR | WGC 截自己的微信窗口 + 本地离线 OCR（RapidOCR） | 看屏截图，交给本地小模型 |
-| **判断** | 真实意图、危险等级、该怎么办 | Jev 判断模型（判断/回复/视觉三路接口可配） | Jev 判断模型 | 本地小模型：8 类意图零样本 86.4%，风险 0–9 分级 + 行动建议 |
+| **判断** | 真实意图、危险等级、该怎么办 | Jev 判断模型（判断/回复/视觉三路接口可配） | Jev 判断模型 | 本地小模型：8 类意图零样本 86.4%，风险 0–9 分级 + 行动建议；也可配 TypeSafe Jev / 兼容网关走云端 |
 | **起草** | 生成候选回复 | 生成模型起草，按合适度排序 | 生成候选并给出胜出概率 | 按内置话术库（10 种）生成，本地模型排序 |
 | **填入** | 一键落到输入框 | 无障碍 `ACTION_SET_TEXT`，失败则剪贴板 | 一键填入微信输入框 | 走系统辅助功能接口 |
 
@@ -118,7 +118,7 @@ Jev 把这一步交给一个专门做判断的模型。不管你是在手机上�
 |---|---|
 | [jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Android 主项目，1225 stars，MIT。最新 v1.4 |
 | [jev-chat-windows](https://github.com/jev-chat/jev-chat-windows) | Windows 端：微信 Windows 旁挂，WGC 截图 + 离线 OCR。最新 v0.1.6 |
-| [jev-chat-jarvis-mac](https://github.com/jev-chat/jev-chat-jarvis-mac) | macOS 端：微信 macOS，本地小模型判断意图与风险。最新 v0.3.0 |
+| [jev-chat-jarvis-mac](https://github.com/jev-chat/jev-chat-jarvis-mac) | macOS 端：微信 macOS，本地/云端判断意图与风险。最新 v0.5.0 |
 | [jev-chat.github.io](https://github.com/jev-chat/jev-chat.github.io) | 官网源码，对应 chatjevs.com（GitHub Pages） |
 
 ## 路线图
