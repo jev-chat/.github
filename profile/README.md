@@ -110,6 +110,8 @@ Jev 把这一步交给一个专门做判断的模型。不管你是在手机上�
 - **Android 端**聊天历史默认不落盘；打开后也只存本机，不上传。
 - **Windows / macOS 端** OCR 全程离线（RapidOCR / 本地模型），不上传截图。
 
+完整的 Android 端隐私政策见 [PRIVACY.md](https://github.com/jev-chat/jev-chat-jarvis/blob/main/PRIVACY.md) 与官网 [chatjevs.com/privacy.html](https://chatjevs.com/privacy.html)。
+
 ## 组织内仓库
 
 | 仓库 | 说明 |
