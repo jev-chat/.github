@@ -8,7 +8,7 @@
   <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jev-chat/jev-chat-jarvis" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/Android-v1.3-3DDC84?logo=android&logoColor=white" alt="Android v1.3" />
   <img src="https://img.shields.io/badge/Windows-v0.1.6-0078D6?logo=windows&logoColor=white" alt="Windows v0.1.6" />
-  <img src="https://img.shields.io/badge/macOS-v0.5.0-000000?logo=apple&logoColor=white" alt="macOS v0.5.0" />
+  <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis-mac?style=flat&amp;logo=apple&amp;logoColor=white&amp;label=macOS" alt="macOS 最新版" />
 </p>
 
 <p align="center">
