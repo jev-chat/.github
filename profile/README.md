@@ -41,21 +41,21 @@
     <tr>
       <td><b>适用系统</b></td>
       <td>Android 11+</td>
-      <td>Windows 10 / 11，微信 Windows 4.x</td>
-      <td>macOS，微信 macOS</td>
+      <td>Windows 10 / 11</td>
+      <td>macOS</td>
       <td>iOS 16+</td>
     </tr>
     <tr>
       <td><b>支持的聊天 App</b></td>
-      <td>QQ 9.3.50 ✅ · X/Twitter 私信 12.25 ✅（均真机全链路）· 飞书 ✅（正文靠离线 OCR）· 其它 App 手动「截屏识别一次」· 微信 ⏸ 已停止支持（微信限制读取，1.4 起不再读取）</td>
-      <td>微信 Windows 4.x</td>
-      <td>微信 macOS</td>
-      <td>不限 App：微信 / QQ / 钉钉 / iMessage / WhatsApp……任何输入框都能用</td>
+      <td>QQ 9.3.50 ✅ · X/Twitter 私信 12.25 ✅（均真机全链路）· 飞书 ✅（正文靠离线 OCR）· 其它 App 手动「截屏识别一次」</td>
+      <td>桌面聊天窗口</td>
+      <td>桌面聊天窗口</td>
+      <td>不限 App：QQ / 钉钉 / iMessage / WhatsApp……任何输入框都能用</td>
     </tr>
     <tr>
       <td><b>采集方式</b></td>
       <td>无障碍服务读节点；读不到正文时截屏 + ML Kit 中文离线 OCR</td>
-      <td>WGC 截自己的微信窗口 + 本地离线 OCR（RapidOCR）</td>
+      <td>WGC 截自己的聊天窗口 + 本地离线 OCR（RapidOCR）</td>
       <td>看屏 + 本地小模型判断意图 / 风险</td>
       <td>长按对方消息 → 复制，键盘读剪贴板（不申请录屏 / 无障碍）</td>
     </tr>
@@ -94,7 +94,7 @@
 
 聊天里最费神的不是打字，是判断：对方到底想要什么？这句话有没有风险？现在该不该回？回什么最合适？
 
-Jev 把这一步交给一个专门做判断的模型。不管你是在手机上用 App，还是在电脑前开着微信，它都贴在聊天旁边，读懂对方刚发的消息，告诉你意图和危险等级，再给出排好序的候选回复。你只需要点一下填进输入框，看一眼，自己按发送。
+Jev 把这一步交给一个专门做判断的模型。不管你是在手机上用 App，还是在电脑前开着聊天软件，它都贴在聊天旁边，读懂对方刚发的消息，告诉你意图和危险等级，再给出排好序的候选回复。你只需要点一下填进输入框，看一眼，自己按发送。
 
 ## 一套内核，三种采集
 
@@ -102,10 +102,10 @@ Jev 把这一步交给一个专门做判断的模型。不管你是在手机上�
 
 | 环节 | 说明 | Android | Windows | macOS |
 |---|---|---|---|---|
-| **采集** | 拿到当前对话内容 | 无障碍服务读节点；读不到正文时截屏 + ML Kit 中文离线 OCR | WGC 截自己的微信窗口 + 本地离线 OCR（RapidOCR） | 看屏截图，交给本地小模型 |
+| **采集** | 拿到当前对话内容 | 无障碍服务读节点；读不到正文时截屏 + ML Kit 中文离线 OCR | WGC 截自己的聊天窗口 + 本地离线 OCR（RapidOCR） | 看屏截图，交给本地小模型 |
 | **判断** | 真实意图、危险等级、该怎么办 | Jev 判断模型（判断/回复/视觉三路接口可配） | Jev 判断模型 | 本地小模型：8 类意图零样本 86.4%，风险 0–9 分级 + 行动建议；也可配 TypeSafe Jev / 兼容网关走云端 |
 | **起草** | 生成候选回复 | 生成模型起草，按合适度排序 | 生成候选并给出胜出概率 | 按内置话术库（10 种）生成，本地模型排序 |
-| **填入** | 一键落到输入框 | 无障碍 `ACTION_SET_TEXT`，失败则剪贴板 | 一键填入微信输入框 | 走系统辅助功能接口 |
+| **填入** | 一键落到输入框 | 无障碍 `ACTION_SET_TEXT`，失败则剪贴板 | 一键填入输入框 | 走系统辅助功能接口 |
 
 新增一个采集渠道，只需要换掉"采集"这一层，判断、起草、排序、填入全部复用。
 
@@ -126,8 +126,8 @@ Jev 把这一步交给一个专门做判断的模型。不管你是在手机上�
 | 仓库 | 说明 |
 |---|---|
 | [jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Android 主项目，<img src="https://img.shields.io/github/stars/jev-chat/jev-chat-jarvis?style=flat&amp;logo=github&amp;label=Stars" alt="Stars" />，MIT。最新 <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis?style=flat&amp;logo=android&amp;logoColor=white&amp;color=3DDC84" alt="Android 最新版" /> |
-| [jev-chat-windows](https://github.com/jev-chat/jev-chat-windows) | Windows 端：微信 Windows 旁挂，WGC 截图 + 离线 OCR。最新 <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-windows?style=flat&amp;logo=windows&amp;logoColor=white&amp;color=0078D6" alt="Windows 最新版" /> |
-| [jev-chat-jarvis-mac](https://github.com/jev-chat/jev-chat-jarvis-mac) | macOS 端：微信 macOS，本地/云端判断意图与风险。最新 <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis-mac?style=flat&amp;logo=apple&amp;logoColor=white" alt="macOS 最新版" /> |
+| [jev-chat-windows](https://github.com/jev-chat/jev-chat-windows) | Windows 端：聊天窗口旁挂，WGC 截图 + 离线 OCR。最新 <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-windows?style=flat&amp;logo=windows&amp;logoColor=white&amp;color=0078D6" alt="Windows 最新版" /> |
+| [jev-chat-jarvis-mac](https://github.com/jev-chat/jev-chat-jarvis-mac) | macOS 端：看屏识别，本地/云端判断意图与风险。最新 <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis-mac?style=flat&amp;logo=apple&amp;logoColor=white" alt="macOS 最新版" /> |
 | [jev-chat-jarvis-ios](https://github.com/jev-chat/jev-chat-jarvis-ios) | iOS 端：iPhone 键盘版，长按复制即出意图 / 风险 / 候选，任何 App 通用。源码形式，暂无预编译包 |
 | [jev-chat.github.io](https://github.com/jev-chat/jev-chat.github.io) | 官网源码，对应 chatjevs.com（GitHub Pages） |
 
@@ -139,8 +139,6 @@ Jev 把这一步交给一个专门做判断的模型。不管你是在手机上�
 
 ## 联系
 
-合作、反馈、进群，请**公众号私信**。交流群二维码在 [Android 仓库 README 底部](https://github.com/jev-chat/jev-chat-jarvis#readme)（7 天有效，过期了公众号私信要新码）。
-
-<p align="center"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/wechat-mp.png" width="160" alt="公众号二维码" /></p>
+有问题或需求请到 [GitHub Issues](https://github.com/jev-chat/jev-chat-jarvis/issues) 提。
 
 <p align="center"><sub>© 2026 Finderchangchang 与 jev-chat 贡献者 · <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/LICENSE">MIT</a> 开源 · 可商用，须注明出处（见 <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/NOTICE">NOTICE</a>）。只处理你自己有权查看的聊天，请遵守各软件的许可协议与当地法律法规。</sub></p>
