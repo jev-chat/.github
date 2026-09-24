@@ -6,8 +6,8 @@
 <p align="center">
   <a href="https://github.com/jev-chat/jev-chat-jarvis"><img src="https://img.shields.io/github/stars/jev-chat/jev-chat-jarvis?style=flat&logo=github&label=Stars" alt="GitHub stars" /></a>
   <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jev-chat/jev-chat-jarvis" alt="MIT License" /></a>
-  <img src="https://img.shields.io/badge/Android-v1.4-3DDC84?logo=android&logoColor=white" alt="Android v1.4" />
-  <img src="https://img.shields.io/badge/Windows-v0.1.6-0078D6?logo=windows&logoColor=white" alt="Windows v0.1.6" />
+  <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis?style=flat&amp;logo=android&amp;logoColor=white&amp;color=3DDC84&amp;label=Android" alt="Android 最新版" />
+  <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-windows?style=flat&amp;logo=windows&amp;logoColor=white&amp;color=0078D6&amp;label=Windows" alt="Windows 最新版" />
   <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis-mac?style=flat&amp;logo=apple&amp;logoColor=white&amp;label=macOS" alt="macOS 最新版" />
 </p>
 
@@ -61,16 +61,16 @@
     </tr>
     <tr>
       <td><b>最新版本</b></td>
-      <td>v1.4（2026-09-23）</td>
-      <td>v0.1.6（2026-09-22）</td>
-      <td>v0.5.0</td>
+      <td><img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis?style=flat&amp;logo=android&amp;logoColor=white&amp;color=3DDC84" alt="Android 最新版" /></td>
+      <td><img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-windows?style=flat&amp;logo=windows&amp;logoColor=white&amp;color=0078D6" alt="Windows 最新版" /></td>
+      <td><img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis-mac?style=flat&amp;logo=apple&amp;logoColor=white" alt="macOS 最新版" /></td>
       <td>源码形式，暂无预编译包</td>
     </tr>
     <tr>
       <td><b>下载</b></td>
       <td><a href="https://github.com/jev-chat/jev-chat-jarvis/raw/main/apk/jev-assistant-v1.4-release.apk">jev-assistant-v1.4-release.apk</a>（约 25 MB）</td>
-      <td><a href="https://github.com/jev-chat/jev-chat-windows/releases">jev-chat-windows-v0.1.6.zip</a>（约 146 MB，解压双击 exe，未签名需选「仍要运行」）</td>
-      <td><a href="https://github.com/jev-chat/jev-chat-jarvis-mac/releases/latest/download/jev-jarvis-macos-latest.zip">jev-jarvis-macos-v0.5.0.zip</a>（未公证，首次需右键打开）</td>
+      <td><a href="https://github.com/jev-chat/jev-chat-windows/releases">最新 zip</a>（约 146 MB，解压双击 exe，未签名需选「仍要运行」）</td>
+      <td><a href="https://github.com/jev-chat/jev-chat-jarvis-mac/releases/latest/download/jev-jarvis-macos-latest.zip">jev-jarvis-macos-latest.zip</a>（未公证，首次需右键打开）</td>
       <td><a href="https://github.com/jev-chat/jev-chat-jarvis-ios">iOS 源码</a>（自行用 Xcode 编译签名，免费账号 7 天过期）</td>
     </tr>
     <tr>
@@ -125,9 +125,9 @@ Jev 把这一步交给一个专门做判断的模型。不管你是在手机上�
 
 | 仓库 | 说明 |
 |---|---|
-| [jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Android 主项目，1225 stars，MIT。最新 v1.4 |
-| [jev-chat-windows](https://github.com/jev-chat/jev-chat-windows) | Windows 端：微信 Windows 旁挂，WGC 截图 + 离线 OCR。最新 v0.1.6 |
-| [jev-chat-jarvis-mac](https://github.com/jev-chat/jev-chat-jarvis-mac) | macOS 端：微信 macOS，本地/云端判断意图与风险。最新 v0.5.0 |
+| [jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Android 主项目，<img src="https://img.shields.io/github/stars/jev-chat/jev-chat-jarvis?style=flat&amp;logo=github&amp;label=Stars" alt="Stars" />，MIT。最新 <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis?style=flat&amp;logo=android&amp;logoColor=white&amp;color=3DDC84" alt="Android 最新版" /> |
+| [jev-chat-windows](https://github.com/jev-chat/jev-chat-windows) | Windows 端：微信 Windows 旁挂，WGC 截图 + 离线 OCR。最新 <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-windows?style=flat&amp;logo=windows&amp;logoColor=white&amp;color=0078D6" alt="Windows 最新版" /> |
+| [jev-chat-jarvis-mac](https://github.com/jev-chat/jev-chat-jarvis-mac) | macOS 端：微信 macOS，本地/云端判断意图与风险。最新 <img src="https://img.shields.io/github/v/release/jev-chat/jev-chat-jarvis-mac?style=flat&amp;logo=apple&amp;logoColor=white" alt="macOS 最新版" /> |
 | [jev-chat-jarvis-ios](https://github.com/jev-chat/jev-chat-jarvis-ios) | iOS 端：iPhone 键盘版，长按复制即出意图 / 风险 / 候选，任何 App 通用。源码形式，暂无预编译包 |
 | [jev-chat.github.io](https://github.com/jev-chat/jev-chat.github.io) | 官网源码，对应 chatjevs.com（GitHub Pages） |
 
