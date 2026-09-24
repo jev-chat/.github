@@ -19,6 +19,8 @@
   <a href="https://github.com/jev-chat/jev-chat-windows/releases"><b>Windows 下载</b></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/jev-chat/jev-chat-jarvis-mac/releases"><b>macOS 下载</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/jev-chat/jev-chat-jarvis-ios"><b>iOS 源码</b></a>
 </p>
 
 ---
@@ -32,6 +34,7 @@
       <th>📱 Android</th>
       <th>🪟 Windows</th>
       <th>🍎 macOS</th>
+      <th>⌨️ iOS</th>
     </tr>
   </thead>
   <tbody>
@@ -40,36 +43,42 @@
       <td>Android 11+</td>
       <td>Windows 10 / 11，微信 Windows 4.x</td>
       <td>macOS，微信 macOS</td>
+      <td>iOS 16+</td>
     </tr>
     <tr>
       <td><b>支持的聊天 App</b></td>
       <td>QQ 9.3.50 ✅ · X/Twitter 私信 12.25 ✅（均真机全链路）· 飞书 ✅（正文靠离线 OCR）· 其它 App 手动「截屏识别一次」· 微信 ⏸ 已停止支持（微信限制读取，1.4 起不再读取）</td>
       <td>微信 Windows 4.x</td>
       <td>微信 macOS</td>
+      <td>不限 App：微信 / QQ / 钉钉 / iMessage / WhatsApp……任何输入框都能用</td>
     </tr>
     <tr>
       <td><b>采集方式</b></td>
       <td>无障碍服务读节点；读不到正文时截屏 + ML Kit 中文离线 OCR</td>
       <td>WGC 截自己的微信窗口 + 本地离线 OCR（RapidOCR）</td>
       <td>看屏 + 本地小模型判断意图 / 风险</td>
+      <td>长按对方消息 → 复制，键盘读剪贴板（不申请录屏 / 无障碍）</td>
     </tr>
     <tr>
       <td><b>最新版本</b></td>
       <td>v1.4（2026-09-23）</td>
       <td>v0.1.6（2026-09-22）</td>
       <td>v0.5.0</td>
+      <td>源码形式，暂无预编译包</td>
     </tr>
     <tr>
       <td><b>下载</b></td>
       <td><a href="https://github.com/jev-chat/jev-chat-jarvis/raw/main/apk/jev-assistant-v1.4-release.apk">jev-assistant-v1.4-release.apk</a>（约 25 MB）</td>
       <td><a href="https://github.com/jev-chat/jev-chat-windows/releases">jev-chat-windows-v0.1.6.zip</a>（约 146 MB，解压双击 exe，未签名需选「仍要运行」）</td>
       <td><a href="https://github.com/jev-chat/jev-chat-jarvis-mac/releases/latest/download/jev-jarvis-macos-latest.zip">jev-jarvis-macos-v0.5.0.zip</a>（未公证，首次需右键打开）</td>
+      <td><a href="https://github.com/jev-chat/jev-chat-jarvis-ios">iOS 源码</a>（自行用 Xcode 编译签名，免费账号 7 天过期）</td>
     </tr>
     <tr>
       <td><b>仓库</b></td>
       <td><a href="https://github.com/jev-chat/jev-chat-jarvis">jev-chat/jev-chat-jarvis</a></td>
       <td><a href="https://github.com/jev-chat/jev-chat-windows">jev-chat/jev-chat-windows</a></td>
       <td><a href="https://github.com/jev-chat/jev-chat-jarvis-mac">jev-chat/jev-chat-jarvis-mac</a></td>
+      <td><a href="https://github.com/jev-chat/jev-chat-jarvis-ios">jev-chat/jev-chat-jarvis-ios</a></td>
     </tr>
   </tbody>
 </table>
