@@ -128,6 +128,7 @@ Jev 把这一步交给一个专门做判断的模型。不管你是在手机上�
 | [jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Android 主项目，1225 stars，MIT。最新 v1.4 |
 | [jev-chat-windows](https://github.com/jev-chat/jev-chat-windows) | Windows 端：微信 Windows 旁挂，WGC 截图 + 离线 OCR。最新 v0.1.6 |
 | [jev-chat-jarvis-mac](https://github.com/jev-chat/jev-chat-jarvis-mac) | macOS 端：微信 macOS，本地/云端判断意图与风险。最新 v0.5.0 |
+| [jev-chat-jarvis-ios](https://github.com/jev-chat/jev-chat-jarvis-ios) | iOS 端：iPhone 键盘版，长按复制即出意图 / 风险 / 候选，任何 App 通用。源码形式，暂无预编译包 |
 | [jev-chat.github.io](https://github.com/jev-chat/jev-chat.github.io) | 官网源码，对应 chatjevs.com（GitHub Pages） |
 
 ## 路线图
