@@ -139,6 +139,8 @@ Jev 把这一步交给一个专门做判断的模型。不管你是在手机上�
 
 ## 联系
 
-有问题或需求请到 [GitHub Issues](https://github.com/jev-chat/jev-chat-jarvis/issues) 提。
+合作、反馈、进群，请**公众号私信**。交流群二维码在 [Android 仓库 README 底部](https://github.com/jev-chat/jev-chat-jarvis#readme)（7 天有效，过期了公众号私信要新码）。
+
+<p align="center"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/mp-qr.png" width="160" alt="公众号二维码" /></p>
 
 <p align="center"><sub>© 2026 Finderchangchang 与 jev-chat 贡献者 · <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/LICENSE">MIT</a> 开源 · 可商用，须注明出处（见 <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/NOTICE">NOTICE</a>）。只处理你自己有权查看的聊天，请遵守各软件的许可协议与当地法律法规。</sub></p>
