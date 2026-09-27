@@ -1,0 +1,49 @@
+/* 组织主页配图共用令牌：与 chatjevs.com 的 style.css 同一套（浅色 / 深色两套分开设计，不是反色）。
+   这里只放出图需要的部分；官网改色时照着 H:\ai_tool\jev-chat-site\style.css 开头的 :root 同步。 */
+/* Figtree（官网同款拉丁字体，SIL OFL 1.1，见 fonts/OFL.txt）放在本地，出图不依赖网络；中文一律用系统字体 */
+@font-face { font-family: "Figtree"; font-style: normal; font-weight: 400 800; src: url(fonts/figtree-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+2000-206F, U+2122, U+2191, U+2193, U+2212; }
+
+:root {
+  --bg: #fbfcfe; --bg-tint: #f2f5fa; --card: #ffffff; --card-2: #f6f8fc;
+  --line: #e3e8f0; --line-2: #cfd8e5;
+  --ink: #0e1726; --ink-2: #475467; --ink-3: #5d6b82;
+  --blue: #2f6be6; --blue-ink: #2458c9; --blue-soft: #eaf1ff; --blue-line: #c7d8fb;
+  --safe: rgb(21, 128, 61); --warn: #b45309; --risk: #b91c1c;
+  --btn-bg: #2f6be6; --btn-ink: #ffffff;
+  --glow-a: rgba(47, 107, 230, .13); --glow-b: rgba(255, 170, 120, .17);
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, .04), 0 1px 3px rgba(16, 24, 40, .05);
+  --shadow: 0 14px 34px -14px rgba(16, 24, 40, .2), 0 2px 6px rgba(16, 24, 40, .05);
+  --shadow-lg: 0 40px 70px -34px rgba(23, 62, 152, .45), 0 14px 28px -16px rgba(16, 24, 40, .28);
+  /* 手机样机里的聊天界面：通用样式，不仿任何具体 App */
+  --ph-frame: rgb(17, 26, 43); --ph-bg: #eef1f6; --ph-head: #ffffff; --ph-them: #ffffff; --ph-them-ink: rgb(17, 24, 39);
+  --ph-me: #3a7afe; --ph-input: #ffffff; --ph-field: #eff2f6; --ph-ink-2: #8a94a6;
+  --font: "Figtree", -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans SC", "Source Han Sans SC", system-ui, sans-serif;
+  --ui: -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --bg: #0b1120; --bg-tint: #0e1628; --card: rgb(18, 27, 46); --card-2: rgb(22, 32, 58); --line: rgb(31, 42, 64); --line-2: #2b3854;
+  --ink: #e8edf6; --ink-2: #aab5c7; --ink-3: #8c98ae;
+  --blue: #6f9bff; --blue-ink: #8fb2ff; --blue-soft: rgb(22, 38, 74); --blue-line: #2b4786;
+  --safe: #4ade80; --warn: #fbbf24; --risk: #f87171;
+  --btn-bg: #9dbbff; --btn-ink: #0b1120;
+  --glow-a: rgba(80, 130, 255, .22); --glow-b: rgba(255, 150, 100, .07);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3);
+  --shadow: 0 16px 36px -16px rgba(0, 0, 0, .6), 0 2px 6px rgba(0, 0, 0, .3);
+  --shadow-lg: 0 40px 80px -34px rgba(40, 90, 220, .45), 0 16px 32px -18px rgba(0, 0, 0, .7);
+  --ph-frame: #2a3550; --ph-bg: #0f1522; --ph-head: rgb(21, 29, 44); --ph-them: rgb(31, 40, 57); --ph-them-ink: #e5e9f0;
+  --ph-input: rgb(21, 29, 44); --ph-field: rgb(31, 40, 57); --ph-ink-2: #7e8aa0;
+  color-scheme: dark;
+}
+
+/* 出图画布：页面底透明，圆角外面露出 GitHub 自己的底色 */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; background: transparent; }
+body { font-family: var(--font); color: var(--ink); -webkit-font-smoothing: antialiased; line-break: strict; }
+p, h1, h2, h3 { margin: 0; }
+svg { display: block; }
+
+/* 气泡尾巴标签（官网 .kicker）：左下角是尖的，像一个聊天气泡 */
+.kicker { display: inline-flex; align-items: center; gap: 7px; padding: 3px 11px 3px 4px; border-radius: 999px 999px 999px 4px; background: var(--blue-soft); color: var(--blue-ink); font-size: 12.5px; font-weight: 800; line-height: 1.6; white-space: nowrap; }
+.kicker b { padding: 0 7px; border-radius: 999px; background: var(--blue); color: var(--btn-ink); font-size: 11px; font-variant-numeric: tabular-nums; }
+.kicker.plain { padding-left: 11px; }

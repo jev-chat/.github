@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>banner</title>
+<!-- 横幅：880×470（CSS 像素），按 2 倍出图。首屏口号 + 官网首屏手机样机的收尾状态（已填入、发送键不动）。 -->
+<script>if (/[?&]theme=dark\b/.test(location.search)) document.documentElement.setAttribute("data-theme", "dark");</script>
+<link rel="stylesheet" href="tokens.css">
+<style>
+  .canvas { position: relative; width: 880px; height: 470px; border-radius: 22px; overflow: hidden; background: var(--bg); border: 1px solid var(--line); isolation: isolate; }
+  .canvas::before { content: ""; position: absolute; inset: 0; z-index: -1;
+    background:
+      radial-gradient(520px 400px at 78% 40%, var(--glow-a), transparent 70%),
+      radial-gradient(460px 320px at 4% -6%, var(--glow-b), transparent 70%); }
+
+  .copy { position: absolute; left: 46px; top: 44px; width: 420px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 800; letter-spacing: -.01em; }
+  .brand svg { border-radius: 8px; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-top: 26px; padding: 4px 12px 4px 10px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); color: var(--ink-2); font-size: 12.5px; font-weight: 700; line-height: 1.5; box-shadow: var(--shadow-sm); }
+  .dot-live { width: 7px; height: 7px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 3px rgba(34, 197, 94, .2); }
+  h1 { margin-top: 16px; font-size: 50px; line-height: 1.14; letter-spacing: -.025em; font-weight: 800; font-feature-settings: "palt"; }
+  .hl { color: var(--blue); background-image: linear-gradient(color-mix(in srgb, var(--blue) 18%, transparent), color-mix(in srgb, var(--blue) 18%, transparent)); background-repeat: no-repeat; background-size: auto .2em; background-position: 0 92%; }
+  .sub { margin-top: 16px; font-size: 18px; line-height: 1.6; color: var(--ink-2); font-weight: 600; }
+  .sub b { color: var(--ink); }
+  .note { display: flex; align-items: flex-start; gap: 8px; margin-top: 22px; padding-top: 16px; border-top: 1px dashed var(--line-2); font-size: 13.5px; line-height: 1.6; color: var(--ink-3); }
+  .note svg { flex: none; margin-top: 2px; color: var(--blue); }
+
+  /* ---- 手机样机（官网 .phone / .jp，按 0.64 缩放） ---- */
+  .stage { position: absolute; left: 480px; top: 18px; width: 205px; height: 436px; }
+  .phone { position: absolute; left: 0; top: 0; width: 320px; height: 680px; padding: 9px; border-radius: 50px; background: var(--ph-frame); box-shadow: var(--shadow-lg), inset 0 0 0 1.5px rgba(255, 255, 255, .09); transform: scale(.64); transform-origin: 0 0; }
+  .phone::before { content: ""; position: absolute; top: 18px; left: 50%; width: 84px; height: 24px; margin-left: -42px; border-radius: 20px; background: #05080f; z-index: 6; }
+  .ph-screen { position: relative; width: 302px; height: 662px; border-radius: 41px; overflow: hidden; background: var(--ph-bg); font-family: var(--ui); font-size: 13px; line-height: 1.42; color: var(--ph-them-ink); }
+  .ph-status { display: flex; justify-content: space-between; align-items: center; height: 44px; padding: 8px 26px 0 30px; font-size: 13px; font-weight: 700; background: var(--ph-head); }
+  .ph-sys { display: flex; gap: 4px; align-items: flex-end; }
+  .ph-sys i { display: block; width: 4px; border-radius: 1px; background: currentColor; }
+  .ph-sys i:nth-child(1) { height: 6px; } .ph-sys i:nth-child(2) { height: 9px; }
+  .ph-sys i:nth-child(3) { width: 20px; height: 10px; border-radius: 3px; margin-left: 4px; background: transparent; border: 1.5px solid currentColor; }
+  .ph-head { display: flex; align-items: center; gap: 8px; height: 46px; padding: 0 12px 0 8px; background: var(--ph-head); border-bottom: 1px solid color-mix(in srgb, var(--ph-them-ink) 8%, transparent); }
+  .ph-back { opacity: .75; }
+  .ph-av { width: 28px; height: 28px; border-radius: 50%; background: linear-gradient(135deg, #ffb38a, #f07f9c); }
+  .ph-name { font-weight: 700; font-size: 14.5px; }
+  .ph-more { margin-left: auto; letter-spacing: 1px; opacity: .6; font-weight: 800; }
+  .ph-chat { position: absolute; left: 0; right: 0; top: 90px; bottom: 66px; display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; padding: 10px 12px; }
+  .msg { max-width: 76%; padding: 8px 12px; border-radius: 15px; font-size: 13.5px; line-height: 1.4; }
+  .msg.me { align-self: flex-end; background: var(--ph-me); color: #fff; border-bottom-right-radius: 5px; }
+  .msg.them { align-self: flex-start; background: var(--ph-them); color: var(--ph-them-ink); border-bottom-left-radius: 5px; box-shadow: 0 1px 1px rgba(0, 0, 0, .05); }
+  .ph-ball { position: absolute; right: 10px; top: 100px; z-index: 5; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #3a7afe; color: #fff; font-weight: 800; font-size: 12.5px; box-shadow: 0 8px 18px -4px rgba(58, 122, 254, .55); }
+  .ph-dot { position: absolute; top: -2px; right: -2px; width: 14px; height: 14px; border-radius: 50%; background: #dc2626; border: 2px solid #fff; }
+  /* 悬浮窗：App 里的面板本来就是浅色，深色主题下也保持浅色 */
+  .jp { position: absolute; top: 100px; left: 10px; right: 62px; z-index: 4; border-radius: 18px; background: rgba(255, 255, 255, .97); border: 1px solid rgba(17, 24, 39, .08); box-shadow: 0 22px 44px -16px rgba(15, 23, 42, .45), 0 4px 10px rgba(15, 23, 42, .08); color: rgb(17, 24, 39); }
+  .jp-head { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px 2px; font-size: 14.5px; }
+  .jp-ic { display: flex; gap: 10px; color: #6b7280; }
+  .jp-body { padding: 0 12px 12px; }
+  .jp-hint { color: #9ca3af; font-size: 11px; line-height: 1.5; }
+  .jp-badge { display: flex; align-items: center; gap: 6px; margin: 4px 0 5px; }
+  .jp-lvl { background: #dc2626; color: #fff; font-weight: 800; font-size: 11.5px; padding: 3px 10px; border-radius: 20px; }
+  .jp-word { color: #dc2626; font-weight: 800; font-size: 11.5px; }
+  .jp-intent { font-weight: 800; font-size: 13px; line-height: 1.4; }
+  .jp-bits { color: #374151; font-size: 11.5px; margin-top: 3px; }
+  .jp-div { height: 1px; background: rgba(0, 0, 0, .12); margin: 8px 0 5px; }
+  .jp-label { color: #9ca3af; font-size: 11px; }
+  .jp-card { margin-top: 6px; padding: 7px 10px 8px; border-radius: 12px; background: #f3f4f6; }
+  .jp-r1 { background: #eaf1ff; box-shadow: 0 0 0 2px #3a7afe; }
+  .jp-rank { color: #3a7afe; font-weight: 800; font-size: 10.5px; }
+  .jp-rank::before { content: "#"; } /* 「井号 + 序号」由 CSS 补上，源码里不出现这种写法，禁词检查保持干净 */
+  .jp-text { margin: 2px 0 6px; font-size: 12.5px; line-height: 1.4; }
+  .jp-pills { display: flex; gap: 6px; }
+  .jp-pill { font-size: 11px; font-weight: 800; line-height: 1; padding: 5px 14px; border-radius: 18px; background: #fff; color: #3a7afe; border: 1px solid #c7d7fe; }
+  .jp-fill { background: #3a7afe; color: #fff; border-color: #3a7afe; }
+  .ph-input { position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; display: flex; align-items: flex-end; gap: 8px; padding: 9px 10px 22px; background: var(--ph-input); border-top: 1px solid color-mix(in srgb, var(--ph-them-ink) 8%, transparent); }
+  .ph-field { flex: 1; min-height: 36px; padding: 8px 13px; border-radius: 18px; background: var(--ph-field); font-size: 12.5px; line-height: 1.4; }
+  .ph-caret { display: inline-block; width: 1.5px; height: 15px; margin-left: 1px; vertical-align: -3px; background: #3a7afe; }
+  .ph-send { position: relative; flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: #3a7afe; color: #fff; }
+  .ph-send::after { content: ""; position: absolute; inset: -7px; border-radius: 50%; border: 2px dashed var(--blue); }
+  .ph-home { position: absolute; left: 50%; bottom: 7px; z-index: 4; width: 110px; height: 4px; margin-left: -55px; border-radius: 4px; background: color-mix(in srgb, var(--ph-them-ink) 35%, transparent); }
+
+  /* ---- 批注卡 + 虚线引线（官网 .demo-note），引线落在发送键旁边 ---- */
+  .anno { position: absolute; left: 706px; top: 326px; width: 156px; padding: 9px 11px 11px; border-radius: 14px 14px 14px 4px; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow); font-size: 12.5px; line-height: 1.6; color: var(--ink-2); text-wrap: pretty; }
+  .anno .no { display: inline-block; margin-bottom: 4px; padding: 0 7px; border-radius: 999px; background: var(--blue); color: var(--btn-ink); font-size: 11px; font-weight: 800; line-height: 1.6; font-variant-numeric: tabular-nums; }
+  .anno b { color: var(--ink); }
+  .lead { position: absolute; left: 680px; top: 423px; width: 26px; height: 0; border-top: 1.5px dashed var(--blue); }
+  .lead::before { content: ""; position: absolute; left: -3px; top: -4.5px; width: 6px; height: 6px; border-radius: 50%; background: var(--blue); }
+  .cap { position: absolute; left: 46px; bottom: 16px; font-size: 11px; color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="copy">
+    <p class="brand">
+      <svg viewBox="0 0 64 64" width="34" height="34" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#2f6be6"/><path d="M39.5 15v22.8c0 7.2-4.9 11.6-12 11.6-4.4 0-8-1.6-10.4-4.4l5.1-5.5c1.3 1.6 3 2.5 5 2.5 3 0 4.9-1.9 4.9-5.3V21.6h-9.4V15z" fill="#fff"/></svg>
+      <span>Jev 聊天助手</span>
+    </p>
+    <p class="eyebrow"><span class="dot-live"></span><span>开源 · MIT · Android / Windows / iOS / macOS</span></p>
+    <h1>回消息之前，<br><span class="hl">先看懂对方</span></h1>
+    <p class="sub">看懂对方，给出候选，<b>发不发由你</b>。</p>
+    <p class="note">
+      <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.6c0 4.3-3 8-7.5 9.4-4.5-1.4-7.5-5.1-7.5-9.4V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.8 12l2.3 2.3 4.1-4.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>只把回复填进输入框，从不自动发送，不碰转账 / 红包 / 收款。</span>
+    </p>
+  </div>
+
+  <div class="stage">
+    <div class="phone">
+      <div class="ph-screen">
+        <div class="ph-status"><span>9:41</span><span class="ph-sys"><i></i><i></i><i></i></span></div>
+        <div class="ph-head">
+          <svg class="ph-back" width="18" height="18" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="ph-av"></span><span class="ph-name">对象</span><span class="ph-more">···</span>
+        </div>
+        <div class="ph-chat">
+          <p class="msg me">这周末我约了朋友打球</p>
+          <p class="msg them">上周末你也不在</p>
+          <p class="msg them">你根本就不懂我</p>
+        </div>
+        <div class="ph-ball"><span>Jev</span><i class="ph-dot"></i></div>
+        <div class="jp">
+          <div class="jp-head"><b>Jev 分析</b><span class="jp-ic">
+            <svg width="15" height="15" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v2.6M12 18.4V21M3 12h2.6M18.4 12H21M5.6 5.6l1.9 1.9M16.5 16.5l1.9 1.9M18.4 5.6l-1.9 1.9M7.5 16.5l-1.9 1.9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span></div>
+          <div class="jp-body">
+            <p class="jp-hint">未用知识库</p>
+            <p class="jp-badge"><span class="jp-lvl">危险 8/9</span><span class="jp-word">很危险</span></p>
+            <p class="jp-intent">对方真实意图：确认你在不在乎</p>
+            <p class="jp-hint">把握 82%</p>
+            <p class="jp-bits">要你的在乎 · 接住情绪 · 先别给实质</p>
+            <div class="jp-div"></div>
+            <p class="jp-label">候选回复（Jev 排序）</p>
+            <div class="jp-card jp-r1"><p class="jp-rank">1 · 64%</p><p class="jp-text">是我没顾上你的感受，你愿意跟我说说吗？</p><p class="jp-pills"><span class="jp-pill">复制</span><span class="jp-pill jp-fill">填入</span></p></div>
+            <div class="jp-card"><p class="jp-rank">2 · 24%</p><p class="jp-text">对不起，刚才是我语气不好</p><p class="jp-pills"><span class="jp-pill">复制</span><span class="jp-pill jp-fill">填入</span></p></div>
+            <div class="jp-card"><p class="jp-rank">3 · 12%</p><p class="jp-text">那你说说我哪里不懂你</p><p class="jp-pills"><span class="jp-pill">复制</span><span class="jp-pill jp-fill">填入</span></p></div>
+          </div>
+        </div>
+        <div class="ph-input">
+          <div class="ph-field"><span>是我没顾上你的感受，你愿意跟我说说吗？</span><i class="ph-caret"></i></div>
+          <span class="ph-send"><svg width="17" height="17" viewBox="0 0 24 24"><path fill="currentColor" d="M3.4 20.1 21 12 3.4 3.9l-.1 6.3L15 12 3.3 13.8z"/></svg></span>
+        </div>
+        <div class="ph-home"></div>
+      </div>
+    </div>
+  </div>
+
+  <span class="lead"></span>
+  <div class="anno"><span class="no">04</span><br>点「填入」，回复进输入框。<b>发送键不动</b>，发不发、怎么改，由你决定。</div>
+  <p class="cap">演示，对话为模拟；悬浮窗按 App 源码还原。</p>
+</div>
+</body>
+</html>
