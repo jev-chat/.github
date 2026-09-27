@@ -21,7 +21,7 @@ CHROME = os.environ.get("CHROME", r"C:\Program Files\Google\Chrome\Application\c
 SRC = pathlib.Path(__file__).resolve().parent
 OUT = SRC.parent
 SCALE = 2
-LIMIT = 150 * 1024
+LIMIT = 150_000  # 字节，按十进制 150KB 算，留足余量
 
 # 名字、页面（可带查询参数）、CSS 宽、CSS 高。四张平台卡顺序固定：Android → Windows → iOS → macOS。
 JOBS = [
@@ -71,7 +71,7 @@ def quantize(img: Image.Image, colors: int) -> Image.Image:
 
 def squeeze(raw: pathlib.Path, out: pathlib.Path) -> int:
     img = Image.open(raw).convert("RGBA")
-    for colors in (256, 192, 128):
+    for colors in (256, 224, 192, 160, 128):
         quantize(img, colors).save(out, optimize=True)
         size = out.stat().st_size
         if size <= LIMIT:
