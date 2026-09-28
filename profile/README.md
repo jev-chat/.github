@@ -1,11 +1,8 @@
 <p align="center">
-  <a href="https://chatjevs.com">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jev-chat/.github/main/profile/assets/banner-dark.png">
-      <img src="https://raw.githubusercontent.com/jev-chat/.github/main/profile/assets/banner-light.png" width="880" alt="Jev 聊天助手：回消息之前，先看懂对方。看懂对方，给出候选，发不发由你。右侧是手机演示：对方发来「你根本就不懂我」，Jev 悬浮窗判断危险 8/9、对方真实意图是确认你在不在乎，给出三条排好序的候选回复；第 1 条已填进输入框，发送键不动，由你自己按。">
-    </picture>
-  </a>
+  <a href="https://github.com/jev-chat/jev-chat-jarvis"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/logo.png" width="96" alt="Jev 聊天助手" /></a>
 </p>
+
+<h1 align="center">Jev 聊天助手</h1>
 
 <p align="center"><b>开源的对话副驾：理解聊天，起草候选回复，发送由你决定。</b><br>各端独立维护，具体功能与支持范围以对应项目说明为准。</p>
 
