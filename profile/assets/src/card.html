@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>card</title>
-<!-- 平台卡：176×252（CSS 像素），按 2 倍出图。?p=android|windows|ios|macos 选平台，?theme=dark 出深色。
+<!-- 平台卡：176×252（CSS 像素），按 2 倍出图。?p=android|windows|ios|macos|imessage 选平台，?theme=dark 出深色。
      四张卡等大、同一版式；卡上不写版本号（版本号由 README 里的 shields 徽章动态显示）。 -->
 <script>if (/[?&]theme=dark\b/.test(location.search)) document.documentElement.setAttribute("data-theme", "dark");</script>
 <link rel="stylesheet" href="tokens.css">
@@ -85,6 +85,17 @@
       '<span class="bub" style="left:34px;top:38px;width:30px"></span>' +
       '<span class="bub me" style="left:70px;top:49px;width:34px"></span>' +
       '<span class="bub" style="left:34px;top:62px;width:22px"></span>' +
+      '<div class="jev" style="left:100px;top:10px;width:46px;height:44px"><i class="hot" style="top:6px;width:18px;right:auto"></i><i style="top:14px"></i><i style="top:22px"></i><i style="top:30px"></i></div>',
+    /* 桌面消息窗口（左侧会话栏 + 右边气泡）+ 浮在上面的悬浮窗 */
+    imessage:
+      '<div class="dev" style="left:26px;top:16px;width:96px;height:62px;border-radius:7px"></div>' +
+      '<span class="dots" style="left:32px;top:21px"><i></i><i></i><i></i></span>' +
+      '<span style="position:absolute;left:52px;top:30px;width:1.6px;height:46px;background:var(--line-2)"></span>' +
+      '<span class="bub" style="left:31px;top:34px;width:16px"></span>' +
+      '<span class="bub" style="left:31px;top:44px;width:16px"></span>' +
+      '<span class="bub" style="left:58px;top:38px;width:26px"></span>' +
+      '<span class="bub me" style="left:84px;top:50px;width:30px"></span>' +
+      '<span class="bub" style="left:58px;top:62px;width:20px"></span>' +
       '<div class="jev" style="left:100px;top:10px;width:46px;height:44px"><i class="hot" style="top:6px;width:18px;right:auto"></i><i style="top:14px"></i><i style="top:22px"></i><i style="top:30px"></i></div>'
   };
 
@@ -92,7 +103,8 @@
     android: { icon: "android", name: "Android", form: "悬浮窗",   how: "无障碍读当前对话\n读不到时本机离线 OCR", status: ["dl", "可下载 APK"] },
     windows: { icon: "windows", name: "Windows", form: "窗口旁挂", how: "截自己的聊天窗口\n本机离线 OCR",         status: ["dl", "zip 下载"] },
     ios:     { icon: "apple",   name: "iOS",     form: "键盘版",   how: "iPhone 键盘版，源码形式",              status: ["src", "源码自行编译"] },
-    macos:   { icon: "apple",   name: "macOS",   form: "悬浮窗",   how: "读窗口里的文字\n或截窗口后本机 OCR",     status: ["dl", "zip 下载"] }
+    macos:   { icon: "apple",   name: "macOS",   form: "悬浮窗",   how: "读窗口里的文字\n或截窗口后本机 OCR",     status: ["dl", "zip 下载"] },
+    imessage:{ icon: "apple",   name: "iMessage", form: "悬浮窗",  how: "读 Mac 信息窗口的文字\n不截图、不读数据库",  status: ["src", "源码运行"] }
   };
 
   var p = (/[?&]p=(\w+)/.exec(location.search) || [])[1] || "android";
