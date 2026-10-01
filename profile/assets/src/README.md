@@ -9,6 +9,7 @@
 | `card.html?p=windows` | `card-windows-*.png` | 176×252 | Windows 平台卡 |
 | `card.html?p=ios` | `card-ios-*.png` | 176×252 | iOS 平台卡 |
 | `card.html?p=macos` | `card-macos-*.png` | 176×252 | macOS 平台卡 |
+| `card.html?p=imessage` | `card-imessage-*.png` | 176×252 | macOS iMessage 平台卡 |
 | `flow.html` | `core-flow-*.png` | 880×380 | 「一套内核」流程图：四端各自采集 → 共用的判断、起草、排序、填入 |
 
 `tokens.css` 是共用令牌（颜色、字体、气泡尾巴标签），和官网 `style.css` 开头的 `:root` 保持一致。`fonts/` 里是官网同款拉丁字体 Figtree（SIL OFL 1.1，许可见 `fonts/OFL.txt`），中文用系统字体。
@@ -19,7 +20,7 @@
 
 ```bash
 pip install pillow imagequant
-python profile/assets/src/render.py              # 全部重出（12 张）
+python profile/assets/src/render.py              # 全部重出（14 张）
 python profile/assets/src/render.py card         # 只出名字里含 card 的
 python profile/assets/src/render.py banner flow  # 可以给多个
 ```
@@ -32,7 +33,7 @@ python profile/assets/src/render.py banner flow  # 可以给多个
 
 - **升版本号**：图里不写版本号，版本由 README 里的 shields 徽章动态显示，发版不用重出图。只有 README 里 Android 直链的文件名（`jev-assistant-v1.4-release.apk`）要跟着改。
 - **改平台卡文字**：改 `card.html` 里的 `DATA`（形态、怎么拿到对话、状态）；形态示意图在 `ART`，设备是中性线条，Jev 那一块用蓝色。
-- **加一个平台**：在 `card.html` 的 `ICON` / `ART` / `DATA` 各加一项，在 `render.py` 的 `JOBS` 里加一行，再到 `flow.html` 的采集那一排加一格（`.cap-row` 改列数，连线 `<svg class="wires">` 里按新的格子中心重算 x 坐标）。README 里的卡片表、徽章行、链接行、仓库表按 Android → Windows → iOS → macOS 的顺序往后排。
+- **加一个平台**：在 `card.html` 的 `ICON` / `ART` / `DATA` 各加一项，在 `render.py` 的 `JOBS` 里加一行，再到 `flow.html` 的采集那一排加一格（`.cap-row` 改列数，连线 `<svg class="wires">` 里按新的格子中心重算 x 坐标）。README 里的卡片表、徽章行、链接行、仓库表按 Android → Windows → iOS → macOS → iMessage 的顺序往后排。
 - **改配色**：只改 `tokens.css`，四类图一起变。
 
 ## 写图时的规矩

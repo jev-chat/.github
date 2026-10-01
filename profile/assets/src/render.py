@@ -23,13 +23,14 @@ OUT = SRC.parent
 SCALE = 2
 LIMIT = 150_000  # 字节，按十进制 150KB 算，留足余量
 
-# 名字、页面（可带查询参数）、CSS 宽、CSS 高。四张平台卡顺序固定：Android → Windows → iOS → macOS。
+# 名字、页面（可带查询参数）、CSS 宽、CSS 高。平台卡顺序固定：Android → Windows → iOS → macOS → iMessage。
 JOBS = [
     ("banner", "banner.html", 880, 470),
     ("card-android", "card.html?p=android", 176, 252),
     ("card-windows", "card.html?p=windows", 176, 252),
     ("card-ios", "card.html?p=ios", 176, 252),
     ("card-macos", "card.html?p=macos", 176, 252),
+    ("card-imessage", "card.html?p=imessage", 176, 252),
     ("core-flow", "flow.html", 880, 380),
 ]
 

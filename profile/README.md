@@ -14,11 +14,11 @@
 
 ## 开始使用 Jev
 
-Android、Windows、macOS，选择适合你的平台。下载、源码和版本说明均在 GitHub。
+Android、Windows、macOS、macOS iMessage，选择适合你的平台。下载、源码和版本说明均在 GitHub。
 
 <table>
   <tr>
-    <td align="center" valign="top" width="33%">
+    <td align="center" valign="top" width="25%">
       <a href="https://github.com/jev-chat/jev-chat-jarvis">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jev-chat/.github/main/profile/assets/card-android-dark.png">
@@ -29,7 +29,7 @@ Android、Windows、macOS，选择适合你的平台。下载、源码和版本�
       <a href="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/apk/jev-assistant-v1.4-release.apk"><b>获取 APK</b></a> · <a href="https://github.com/jev-chat/jev-chat-jarvis">项目主页</a><br>
       <sub>Android 11+ · ARM64</sub>
     </td>
-    <td align="center" valign="top" width="33%">
+    <td align="center" valign="top" width="25%">
       <a href="https://github.com/jev-chat/jev-chat-windows">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jev-chat/.github/main/profile/assets/card-windows-dark.png">
@@ -40,7 +40,7 @@ Android、Windows、macOS，选择适合你的平台。下载、源码和版本�
       <a href="https://github.com/jev-chat/jev-chat-windows/releases"><b>查看发布版本</b></a> · <a href="https://github.com/jev-chat/jev-chat-windows">项目主页</a><br>
       <sub>Windows 10 1903+ / 11</sub>
     </td>
-    <td align="center" valign="top" width="33%">
+    <td align="center" valign="top" width="25%">
       <a href="https://github.com/jev-chat/jev-chat-jarvis-mac">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jev-chat/.github/main/profile/assets/card-macos-dark.png">
@@ -50,6 +50,17 @@ Android、Windows、macOS，选择适合你的平台。下载、源码和版本�
       <b>macOS</b><br>
       <a href="https://github.com/jev-chat/jev-chat-jarvis-mac/releases"><b>查看发布版本</b></a> · <a href="https://github.com/jev-chat/jev-chat-jarvis-mac">项目主页</a><br>
       <sub>macOS 13+ · Apple Silicon</sub>
+    </td>
+    <td align="center" valign="top" width="25%">
+      <a href="https://github.com/keyuchen21/jev-chat-imessage">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jev-chat/.github/main/profile/assets/card-imessage-dark.png">
+          <img src="https://raw.githubusercontent.com/jev-chat/.github/main/profile/assets/card-imessage-light.png" width="176" alt="macOS iMessage 项目">
+        </picture>
+      </a><br>
+      <b>macOS · iMessage</b><br>
+      <a href="https://github.com/keyuchen21/jev-chat-imessage/releases"><b>查看发布版本</b></a> · <a href="https://github.com/keyuchen21/jev-chat-imessage">项目主页</a><br>
+      <sub>Mac 信息 App · Apple Silicon</sub>
     </td>
   </tr>
 </table>
@@ -62,7 +73,7 @@ Android、Windows、macOS，选择适合你的平台。下载、源码和版本�
 - **准备回复**：结合判断给出候选回复，帮助你决定怎么表达。
 - **由你发送**：你选择回复并确认发送，保留最后的决定权。
 
-Android 版通过悬浮窗使用，已验证 QQ、X 私信和飞书等场景；微信 Android 版已全面下架。更多功能、适配范围与限制见 [Android 项目说明](https://github.com/jev-chat/jev-chat-jarvis)。Windows 和 macOS 的功能与安装要求见各自项目主页。
+Android 版通过悬浮窗使用，已验证 QQ、X 私信和飞书等场景；微信 Android 版已全面下架。更多功能、适配范围与限制见 [Android 项目说明](https://github.com/jev-chat/jev-chat-jarvis)。Windows、macOS 和 macOS iMessage 的功能与安装要求见各自项目主页。
 
 ## 数据与隐私
 
@@ -82,10 +93,10 @@ Android 版的截图只在本机进行 OCR；分析时，聊天文字和启用�
 
 **Jev Chat Assistant** is an open-source chat copilot. It helps interpret conversations and prepare reply candidates. You decide what to send. Each platform is maintained independently; see its repository for supported features and requirements.
 
-| Android | Windows | macOS |
-| :---: | :---: | :---: |
-| [Download APK](https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/apk/jev-assistant-v1.4-release.apk) | [Releases](https://github.com/jev-chat/jev-chat-windows/releases) | [Releases](https://github.com/jev-chat/jev-chat-jarvis-mac/releases) |
-| [Project](https://github.com/jev-chat/jev-chat-jarvis) | [Project](https://github.com/jev-chat/jev-chat-windows) | [Project](https://github.com/jev-chat/jev-chat-jarvis-mac) |
+| Android | Windows | macOS | macOS iMessage |
+| :---: | :---: | :---: | :---: |
+| [Download APK](https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/apk/jev-assistant-v1.4-release.apk) | [Releases](https://github.com/jev-chat/jev-chat-windows/releases) | [Releases](https://github.com/jev-chat/jev-chat-jarvis-mac/releases) | [Releases](https://github.com/keyuchen21/jev-chat-imessage/releases) |
+| [Project](https://github.com/jev-chat/jev-chat-jarvis) | [Project](https://github.com/jev-chat/jev-chat-windows) | [Project](https://github.com/jev-chat/jev-chat-jarvis-mac) | [Project](https://github.com/keyuchen21/jev-chat-imessage) |
 
 If Jev helps you, consider starring the [main project](https://github.com/jev-chat/jev-chat-jarvis). No star or follow is required to download or use it.
 
@@ -95,13 +106,13 @@ Android runs screenshot OCR locally and sends chat text to your configured model
 
 ## 安装教程
 
-[Android 安装说明](https://github.com/jev-chat/jev-chat-jarvis#快速开始) · [Windows 项目说明](https://github.com/jev-chat/jev-chat-windows) · [macOS 项目说明](https://github.com/jev-chat/jev-chat-jarvis-mac)
+[Android 安装说明](https://github.com/jev-chat/jev-chat-jarvis#快速开始) · [Windows 项目说明](https://github.com/jev-chat/jev-chat-windows) · [macOS 项目说明](https://github.com/jev-chat/jev-chat-jarvis-mac) · [macOS iMessage 项目说明](https://github.com/keyuchen21/jev-chat-imessage)
 
 ## 交流与更新
 
 - **公众号与交流群**：扫码关注下方公众号，私信获取最新入群方式；最新入口也会在 [主仓库](https://github.com/jev-chat/jev-chat-jarvis) 维护。
 - **版本更新**：[Android 更新日志](https://github.com/jev-chat/jev-chat-jarvis/blob/main/CHANGELOG.md) · [Windows 发布页](https://github.com/jev-chat/jev-chat-windows/releases) · [macOS 发布页](https://github.com/jev-chat/jev-chat-jarvis-mac/releases)。
-- **问题与建议**：到对应仓库提交 Issue —— [Android](https://github.com/jev-chat/jev-chat-jarvis/issues) · [Windows](https://github.com/jev-chat/jev-chat-windows/issues) · [macOS](https://github.com/jev-chat/jev-chat-jarvis-mac/issues)。
+- **问题与建议**：到对应仓库提交 Issue —— [Android](https://github.com/jev-chat/jev-chat-jarvis/issues) · [Windows](https://github.com/jev-chat/jev-chat-windows/issues) · [macOS](https://github.com/jev-chat/jev-chat-jarvis-mac/issues) · [macOS iMessage](https://github.com/keyuchen21/jev-chat-imessage/issues)。
 
 <p align="center"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/mp-qr.png" width="160" alt="公众号二维码" /></p>
 
