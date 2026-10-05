@@ -26,7 +26,7 @@ Android、Windows、macOS，选择适合你的平台。下载、源码和版本�
         </picture>
       </a><br>
       <b>Android</b><br>
-      <a href="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/apk/jev-assistant-v1.4-release.apk"><b>获取 APK</b></a> · <a href="https://github.com/jev-chat/jev-chat-jarvis">项目主页</a><br>
+      <a href="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/apk/jev-assistant-v1.5-release.apk"><b>获取 APK</b></a> · <a href="https://github.com/jev-chat/jev-chat-jarvis">项目主页</a><br>
       <sub>Android 11+ · ARM64</sub>
     </td>
     <td align="center" valign="top" width="33%">
@@ -84,7 +84,7 @@ Android 版的截图只在本机进行 OCR；分析时，聊天文字和启用�
 
 | Android | Windows | macOS |
 | :---: | :---: | :---: |
-| [Download APK](https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/apk/jev-assistant-v1.4-release.apk) | [Releases](https://github.com/jev-chat/jev-chat-windows/releases) | [Releases](https://github.com/jev-chat/jev-chat-jarvis-mac/releases) |
+| [Download APK](https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/apk/jev-assistant-v1.5-release.apk) | [Releases](https://github.com/jev-chat/jev-chat-windows/releases) | [Releases](https://github.com/jev-chat/jev-chat-jarvis-mac/releases) |
 | [Project](https://github.com/jev-chat/jev-chat-jarvis) | [Project](https://github.com/jev-chat/jev-chat-windows) | [Project](https://github.com/jev-chat/jev-chat-jarvis-mac) |
 
 If Jev helps you, consider starring the [main project](https://github.com/jev-chat/jev-chat-jarvis). No star or follow is required to download or use it.
