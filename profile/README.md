@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/jev-chat/jev-chat-jarvis"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/assets/images/logo.png" width="96" alt="Jev 聊天助手" /></a>
+  <a href="https://github.com/jev-chat/jev-chat-jarvis"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/.github/assets/images/logo.png" width="96" alt="Jev 聊天助手" /></a>
 </p>
 
 <h1 align="center">Jev 聊天助手</h1>
@@ -26,7 +26,7 @@ Android、Windows、macOS，选择适合你的平台。下载、源码和版本�
         </picture>
       </a><br>
       <b>Android</b><br>
-      <a href="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/apk/jev-assistant-v1.7-release.apk"><b>获取 APK</b></a> · <a href="https://github.com/jev-chat/jev-chat-jarvis">项目主页</a><br>
+      <a href="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/cn/apk/jev-assistant-v1.7-release.apk"><b>获取 APK</b></a> · <a href="https://github.com/jev-chat/jev-chat-jarvis">项目主页</a><br>
       <sub>Android 11+ · ARM64</sub>
     </td>
     <td align="center" valign="top" width="33%">
@@ -84,7 +84,7 @@ Android 版的截图只在本机进行 OCR；分析时，聊天文字和启用�
 
 | Android | Windows | macOS |
 | :---: | :---: | :---: |
-| [Download APK](https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/apk/jev-assistant-v1.7-release.apk) | [Releases](https://github.com/jev-chat/jev-chat-windows/releases) | [Releases](https://github.com/jev-chat/jev-chat-jarvis-mac/releases) |
+| [Download APK](https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/cn/apk/jev-assistant-v1.7-release.apk) | [Releases](https://github.com/jev-chat/jev-chat-windows/releases) | [Releases](https://github.com/jev-chat/jev-chat-jarvis-mac/releases) |
 | [Project](https://github.com/jev-chat/jev-chat-jarvis) | [Project](https://github.com/jev-chat/jev-chat-windows) | [Project](https://github.com/jev-chat/jev-chat-jarvis-mac) |
 
 If Jev helps you, consider starring the [main project](https://github.com/jev-chat/jev-chat-jarvis). No star or follow is required to download or use it.
@@ -103,6 +103,6 @@ Android runs screenshot OCR locally and sends chat text to your configured model
 - **版本更新**：[Android 更新日志](https://github.com/jev-chat/jev-chat-jarvis/blob/main/cn/CHANGELOG.md) · [Windows 发布页](https://github.com/jev-chat/jev-chat-windows/releases) · [macOS 发布页](https://github.com/jev-chat/jev-chat-jarvis-mac/releases)。
 - **问题与建议**：到对应仓库提交 Issue —— [Android](https://github.com/jev-chat/jev-chat-jarvis/issues) · [Windows](https://github.com/jev-chat/jev-chat-windows/issues) · [macOS](https://github.com/jev-chat/jev-chat-jarvis-mac/issues)。
 
-<p align="center"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/assets/images/mp-qr.png" width="160" alt="公众号二维码" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/.github/assets/images/mp-qr.png" width="160" alt="公众号二维码" /></p>
 
 <p align="center"><sub>© 2026 Finderchangchang 与 jev-chat 贡献者 · <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/LICENSE">MIT</a> 开源 · 可商用，须注明出处（见 <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/NOTICE">NOTICE</a>）。只处理你自己有权查看的聊天，请遵守各软件的许可协议与当地法律法规。</sub></p>
