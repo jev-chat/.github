@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/jev-chat/jev-chat-jarvis"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/logo.png" width="96" alt="Jev 聊天助手" /></a>
+  <a href="https://github.com/jev-chat/jev-chat-jarvis"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/assets/images/logo.png" width="96" alt="Jev 聊天助手" /></a>
 </p>
 
 <h1 align="center">Jev 聊天助手</h1>
@@ -66,7 +66,7 @@ Android 版通过悬浮窗使用，已验证 QQ、X 私信和飞书等场景；�
 
 ## 数据与隐私
 
-Android 版的截图只在本机进行 OCR；分析时，聊天文字和启用的背景信息会发给你配置的模型服务商。密钥、知识库和可选历史存于本机。详情见 [Android 隐私政策](https://github.com/jev-chat/jev-chat-jarvis/blob/main/PRIVACY.md)。其他平台的数据处理方式请查阅对应仓库说明。
+Android 版的截图只在本机进行 OCR；分析时，聊天文字和启用的背景信息会发给你配置的模型服务商。密钥、知识库和可选历史存于本机。详情见 [Android 隐私政策](https://github.com/jev-chat/jev-chat-jarvis/blob/main/cn/PRIVACY.md)。其他平台的数据处理方式请查阅对应仓库说明。
 
 <details>
 <summary>其他项目与源码</summary>
@@ -100,9 +100,9 @@ Android runs screenshot OCR locally and sends chat text to your configured model
 ## 交流与更新
 
 - **公众号与交流群**：扫码关注下方公众号，私信获取最新入群方式；最新入口也会在 [主仓库](https://github.com/jev-chat/jev-chat-jarvis) 维护。
-- **版本更新**：[Android 更新日志](https://github.com/jev-chat/jev-chat-jarvis/blob/main/CHANGELOG.md) · [Windows 发布页](https://github.com/jev-chat/jev-chat-windows/releases) · [macOS 发布页](https://github.com/jev-chat/jev-chat-jarvis-mac/releases)。
+- **版本更新**：[Android 更新日志](https://github.com/jev-chat/jev-chat-jarvis/blob/main/cn/CHANGELOG.md) · [Windows 发布页](https://github.com/jev-chat/jev-chat-windows/releases) · [macOS 发布页](https://github.com/jev-chat/jev-chat-jarvis-mac/releases)。
 - **问题与建议**：到对应仓库提交 Issue —— [Android](https://github.com/jev-chat/jev-chat-jarvis/issues) · [Windows](https://github.com/jev-chat/jev-chat-windows/issues) · [macOS](https://github.com/jev-chat/jev-chat-jarvis-mac/issues)。
 
-<p align="center"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/docs/images/mp-qr.png" width="160" alt="公众号二维码" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/jev-chat/jev-chat-jarvis/main/assets/images/mp-qr.png" width="160" alt="公众号二维码" /></p>
 
 <p align="center"><sub>© 2026 Finderchangchang 与 jev-chat 贡献者 · <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/LICENSE">MIT</a> 开源 · 可商用，须注明出处（见 <a href="https://github.com/jev-chat/jev-chat-jarvis/blob/main/NOTICE">NOTICE</a>）。只处理你自己有权查看的聊天，请遵守各软件的许可协议与当地法律法规。</sub></p>
